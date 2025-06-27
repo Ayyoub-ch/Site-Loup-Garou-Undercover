@@ -56,7 +56,7 @@ $joueurs = $pdo->query($sql_loup)->fetchAll(PDO::FETCH_ASSOC);
 </a>
 
 <a href="/vs/page/menu.php" class="btn-accueil">
-  <img src="../img/home.png" alt="Accueil" />
+    <img src="img/home.png" alt="Accueil" />
 </a>
 
 
