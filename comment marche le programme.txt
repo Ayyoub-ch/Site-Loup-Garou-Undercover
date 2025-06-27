@@ -1,0 +1,48 @@
+
+📝 CHEMINEMENT COMPLET DU FORMULAIRE AU TRAITEMENT PHP
+
+1. L'utilisateur remplit le formulaire HTML :
+   - Étape 1 : Il saisit le nom du jeu (ex : "Loup Garou")
+   - Étape 2 : Il entre les victoires/défaites/défaites rapides pour Yamin et Halima
+   - Il clique sur "Envoyer", les données sont envoyées via POST à index.php?action=traitement
+
+2. Le formulaire envoie les données :
+   - L’attribut `action="index.php?action=traitement"` signifie que index.php doit détecter `$_GET['action'] == 'traitement'` pour inclure `traitement.php`
+
+3. traitement.php :
+   a. Se connecte à la base de données MySQL (BDD `vs`)
+   b. Récupère les données du formulaire via $_POST
+   c. Met tout en minuscules pour être insensible à la casse sur le nom du jeu
+   d. Détermine la bonne table dans la BDD à l’aide du nom du jeu
+   e. Récupère les IDs des joueurs dans la table `persos`
+   f. Appelle une fonction qui :
+      - Vérifie si le joueur a déjà une ligne pour ce jeu
+      - Si oui, fait un UPDATE (ajoute les nouvelles valeurs aux anciennes)
+      - Sinon, fait un INSERT avec les nouvelles valeurs
+   g. Répète ça pour Yamin et Halima
+
+4. Après traitement :
+   - Redirige vers game.php avec `header("Location: game.php")`
+
+Résumé :
+Formulaire → POST vers traitement → Connexion BDD → Vérification jeu → Récupération ID joueurs → Insertion/Mise à jour des stats → Redirection
+
+
+============================================================
+
+
+✅ VERSION RÉSUMÉE
+
+1. L'utilisateur remplit un formulaire avec :
+   - Nom du jeu
+   - Victoires/Défaites/Défaites rapides de Yamin et Halima
+
+2. Le formulaire envoie les données à traitement.php
+
+3. traitement.php :
+   - Se connecte à la base
+   - Vérifie le nom du jeu → trouve la table
+   - Récupère les ID des joueurs
+   - Met à jour (ou insère) leurs scores (victoire, défaite, défaite éclair)
+
+4. Redirection vers la page de confirmation (game.php)

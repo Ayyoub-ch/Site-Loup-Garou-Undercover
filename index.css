@@ -1,0 +1,115 @@
+@font-face {
+            font-family: 'Edo SZ';
+            src: url('fonts/edosz.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url('img/background.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Edo SZ', cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 80px 0 40px; /* ↑ Titre plus éloigné du haut et du reste */
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .menu-options {
+            display: flex;
+            gap: 200px; /* ↑ Plus d’espace entre les images */
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 70px;  /* ↑ Espace au-dessus des images */
+            margin-bottom: 200px; /* ↑ Plus d’espace en bas */
+        }
+
+        .menu-options img {
+            width: 250px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            margin-top: 100px; /* ↓ Pour baisser un peu chaque image individuellement si besoin */
+        }
+
+
+        .menu-options img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+        }
+
+        figure {
+        margin: 0; /* enlève marge par défaut */
+        text-align: center;
+        cursor: pointer;
+    }
+
+    figure img {
+        width: 250px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: block;
+        margin: 0 auto; /* centre l’image dans figure */
+    }
+
+    figure:hover img {
+        transform: scale(1.05);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+    }
+
+    figcaption {
+        font-family: 'Edo SZ', cursive;
+        font-size: 2em;
+        color: white;
+        margin-top: 15px;
+        text-shadow: 1px 1px 2px #000;
+    }
+
+
+    .btn-retour {
+    position: fixed;
+    bottom: 20px;  /* 20px du bas */
+    left: 20px;    /* 20px de la gauche */
+    z-index: 1000; /* au-dessus des autres éléments */
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;   /* largeur du bouton, adapte si besoin */
+    height: auto;
+}
+
+.btn-retour img {
+    width: 200%;
+    height: auto;
+    display: block;
+}
+
+
+.btn-accueil {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  display: inline-block;
+  width: 50px; /* Ajuste si nécessaire */
+  height: auto;
+}
+
+.btn-accueil img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

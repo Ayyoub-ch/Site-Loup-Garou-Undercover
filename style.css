@@ -1,0 +1,140 @@
+@font-face {
+            font-family: 'Edo SZ';
+            src: url('/vs/fonts/edosz.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url('/vs/img/background.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Edo SZ', cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+figure {
+    max-width: 350px;
+    margin: 0;
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+figcaption {
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+}
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Assure que le header et le footer s'étendent sur toute la largeur de la page */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+  padding: 20px; /* Ajustez le padding selon vos besoins */
+}
+
+header {
+  height: 300px;
+  background-image: url('img/banniere_header.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; /* Aligne les éléments enfants verticalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+header img {
+  width: 350px;
+  height: auto;
+  margin-bottom: 20px; /* Ajoute un espace entre l'image et le titre */
+}
+
+header h1 {
+  margin: 0; /* Supprime les marges par défaut du h1 */
+  width: 200%;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 80px 0 40px;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+  text-align: center; /* ✅ Centre le texte horizontalement */
+}
+
+
+footer {
+  height: 300px; /* Assurez-vous que la hauteur est la même que celle du header */
+  background-image: url('img/banniere_footer.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn-retour {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+        cursor: pointer;
+        display: inline-block;
+        width: 50px;
+        height: auto;
+    }
+
+    .btn-retour img {
+        width: 200%;
+        height: auto;
+        display: block;
+    }
+
+    .btn-accueil {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        cursor: pointer;
+        display: inline-block;
+        width: 50px;
+        height: auto;
+    }
+
+    .btn-accueil img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+  .btn-mode {
+    position: fixed;
+    bottom: 30px; /* En bas de la page */
+    left: 50%; /* Centré horizontalement */
+    transform: translateX(-50%); /* Décale de 50% de sa propre largeur vers la gauche pour centrer */
+    z-index: 1000;
+    cursor: pointer;
+    display: inline-block;
+    width: 200px; /* Largeur augmentée */
+    height: auto;
+  }
+
+.btn-mode img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
