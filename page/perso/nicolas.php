@@ -1,8 +1,8 @@
 <div class="fiche-personnage">
   <div class="fiche-image">
-    <img src="/vs/img/perso/nicolas.png" alt="Image du personnage">
+    <img src="/vs3/img/perso/nicolas.png" alt="Image du personnage">
     <p>Nicolas</p>
-    <img src="/vs/img/perso/nicolas2.png" alt="Image du personnage">
+    <img src="/vs3/img/perso/nicolas2.png" alt="Image du personnage">
     <p>Nicolas quand il est chasseur</p>
   </div>
   <div class="fiche-info">
@@ -27,24 +27,24 @@
 
 
 <a href="javascript:history.back()" class="btn-retour">
-    <img src="/vs/img/return.png" alt="Bouton retour" />
+    <img src="/vs3/img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
-  <img src="/vs/img/home.png" alt="Accueil" />
+<a href="/vs3/page/menu.php" class="btn-accueil">
+  <img src="/vs3/img/home.png" alt="Accueil" />
 </a>
 
 
 <style>
 @font-face {
     font-family: 'Edo SZ';
-    src: url('/vs/fonts//edosz.ttf') format('truetype');
+    src: url('/vs3/fonts//edosz.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    background-image: url('/vs/img/background.png');
+    background-image: url('/vs3/img/background.png');
     background-size: cover;
     background-position: center;
     margin: 0;

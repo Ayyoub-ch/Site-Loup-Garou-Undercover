@@ -8,11 +8,16 @@
 }
 
         body {
-            background-image: url('/vs/img/background.png');
-            background-size: cover;
-            background-position: center;
+            background-image: url('img/background.png');
+            background-size: cover;      /* L'image couvre tout l'espace disponible */
+            background-position: center; /* L'image est centrée */
+            background-repeat: no-repeat;/* Empêche la répétition */
+            background-attachment: fixed;/* L'image ne bouge pas quand on scrolle */
+            
+            min-height: 100vh;           /* Prend au moins 100% de la hauteur de l'écran */
             margin: 0;
             padding: 0;
+            
             font-family: 'Edo SZ', cursive;
             display: flex;
             flex-direction: column;
@@ -31,8 +36,8 @@
             gap: 200px; /* ↑ Plus d’espace entre les images */
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 70px;  /* ↑ Espace au-dessus des images */
-            margin-bottom: 200px; /* ↑ Plus d’espace en bas */
+            margin-top: 150px;  /* ↑ Espace au-dessus des images */
+            margin-bottom: 300px; /* ↑ Plus d’espace en bas */
         }
 
         .menu-options img {
@@ -139,37 +144,37 @@
     <h1>Choisissez votre menu</h1>
 
 <div class="menu-options">
-    <figure onclick="location.href='/vs/page/formulaire2.php'">
-        <img src="/vs/img/results.png" alt="Menu 1">
+    <figure onclick="location.href='/vs3/page/formulaire2.php'">
+        <img src="/vs3/img/results.png" alt="Menu 1">
         <figcaption>Ajouter un score</figcaption>
     </figure>
-    <figure onclick="location.href='/vs/page/formulaire3.php'">
-        <img src="/vs/img/add.png" alt="Menu 2">
+    <figure onclick="location.href='/vs3/page/formulaire3.php'">
+        <img src="/vs3/img/add.png" alt="Menu 2">
         <figcaption>Ajouter un joueur</figcaption>
     </figure>
-    <figure onclick="location.href='/vs/page/formulaire5.php'">
-        <img src="/vs/img/supp.png" alt="Menu 3">
+    <figure onclick="location.href='/vs3/page/formulaire5.php'">
+        <img src="/vs3/img/supp.png" alt="Menu 3">
         <figcaption>Supprimer un joueur</figcaption>
     </figure>
-    <figure onclick="location.href='/vs/page/stats2.php'">
-        <img src="/vs/img/stats.png" alt="Menu 4">
+    <figure onclick="location.href='/vs3/page/stats2.php'">
+        <img src="/vs3/img/stats.png" alt="Menu 4">
         <figcaption>Voir les scores</figcaption>
     </figure>
-    <figure onclick="location.href='/vs/page/fiche_perso.php'">
-        <img src="/vs/img/chara.png" alt="Menu 5">
+    <figure onclick="location.href='/vs3/page/fiche_perso.php'">
+        <img src="/vs3/img/chara.png" alt="Menu 5">
         <figcaption>Fiche Personnage</figcaption>
     </figure>
 </div>
 
 
 <a href="javascript:history.back()" class="btn-retour">
-    <img src="/vs/img/return.png" alt="Bouton retour" />
+    <img src="/vs3/img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
-  <img src="/vs/img/home.png" alt="Accueil" />
+<a href="/vs3/page/menu.php" class="btn-accueil">
+  <img src="/vs3/img/home.png" alt="Accueil" />
 </a>
 
-<a href="/vs/index.php?action=mode" class="btn-mode">
+<a href="/vs3/index.php?action=mode" class="btn-mode">
     <img src="img/back_to_all.png" alt="Accueil" />
 </a>

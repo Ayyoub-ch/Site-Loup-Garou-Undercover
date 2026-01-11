@@ -1,10 +1,10 @@
 <div class="fiche-personnage">
   <div class="fiche-image">
-    <img src="/vs/img/perso/ayyoub.png" alt="Image du personnage">
+    <img src="/vs3/img/perso/ayyoub.png" alt="Image du personnage">
     <p>Ayyoub</p>
-    <img src="/vs/img/perso/ayyoub3.png" alt="Image du personnage">
+    <img src="/vs3/img/perso/ayyoub3.png" alt="Image du personnage">
     <p>Ayyoub quand il joue</p>
-    <img src="/vs/img/perso/ayyoub4.png" alt="Image du personnage">
+    <img src="/vs3/img/perso/ayyoub4.png" alt="Image du personnage">
     <p>Ayyoub quand il ne joue pas</p>
   </div>
   <title>Fiche Perso: Ayyoub</title>
@@ -13,7 +13,7 @@
     
     <div class="info-section">
       <h3>Style de jeu</h3>
-      <p>Parle quasiment pas, sauf si cela est nécessaire dans une partie, il ne prend ni part au débat, ni au vote et généralement il suivra celui qui selon lui est le plus propre de la vérité </p>
+      <p>Parle quasiment pas, sauf si cela est nécessaire dans une partie, il ne prend ni part au débat, ni au vote et généralement il suivra celui qui selon lui est le plus proche de la vérité </p>
       <p>Autrement ça lui arrive de parler et même de parfois débattre si cela devient dangereux pour lui ou pour son groupe, il essayera de ne pas donner de soupçon à qui que ce soit et si cela est utile, il pourra donner des indices aux joueurs sur son rôle dans la partie. Sinon cela lui arrive d'être complétement aléatoire, il peut faire des choix totalement hazardeux, ce qui peut dérouter les autres, ce qui fair qu'on ne peut pas de définir son style de jeu.</p>
     </div>
     
@@ -30,24 +30,24 @@
 </div>
 
 <a href="javascript:history.back()" class="btn-retour">
-    <img src="/vs/img/return.png" alt="Bouton retour" />
+    <img src="/vs3/img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
-  <img src="/vs/img/home.png" alt="Accueil" />
+<a href="/vs3/page/menu.php" class="btn-accueil">
+  <img src="/vs3/img/home.png" alt="Accueil" />
 </a>
 
 
 <style>
 @font-face {
     font-family: 'Edo SZ';
-    src: url('/vs/fonts/edosz.ttf') format('truetype');
+    src: url('/vs3/fonts/edosz.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    background-image: url('/vs/img/background.png');
+    background-image: url('/vs3/img/background.png');
     background-size: cover;
     background-position: center;
     margin: 0;

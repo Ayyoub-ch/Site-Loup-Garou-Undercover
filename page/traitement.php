@@ -86,6 +86,6 @@ insertOrUpdateStats($pdo, $table, $idYamin, $dataYamin);
 insertOrUpdateStats($pdo, $table, $idHalima, $dataHalima);
 
 // Redirection ou message de confirmation
-header("Location: /vs/page/game.php");
+header("Location: /vs3/page/game.php");
 exit;
 ?>

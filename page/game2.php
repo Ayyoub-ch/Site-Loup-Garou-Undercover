@@ -20,11 +20,11 @@
     <img src="img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
+<a href="/vs3/page/menu.php" class="btn-accueil">
   <img src="../img/home.png" alt="Accueil" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
+<a href="/vs3/page/menu.php" class="btn-accueil">
   <img src="../img/home.png" alt="Accueil" />
 </a>
 

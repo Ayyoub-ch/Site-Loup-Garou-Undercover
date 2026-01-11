@@ -12,7 +12,7 @@ $joueurs = $pdo->query("SELECT id, prenom FROM persos ORDER BY prenom")->fetchAl
 ?>
 
 
-<form class="game-form" id="gameForm" method="POST" action="/vs/page/traitement2.php">
+<form class="game-form" id="gameForm" method="POST" action="/vs3/page/traitement2.php">
     <!-- Étape 1 : Choix du jeu -->
     <div id="step1">
         <h2>Quel jeu avez-vous joué aujourd'hui ?</h2>
@@ -64,14 +64,14 @@ function goToStep2() {
     <img src="../img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
+<a href="/vs3/index.php?action=all" class="btn-accueil">
   <img src="../img/home.png" alt="Accueil" />
 </a>
 
 <style>
     @font-face {
     font-family: 'Edo SZ';
-    src: url('/vs/fonts/edosz.ttf') format('truetype');
+    src: url('/vs3/fonts/edosz.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -128,14 +128,15 @@ function goToStep2() {
     .game-form {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 600px;
         margin: 40px auto;
         font-family: 'Edo SZ', cursive;
+        margin-top: 200px;  
     }
 
     .game-form label {
         margin-top: 15px;
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .game-form input[type="text"],
@@ -151,7 +152,7 @@ function goToStep2() {
     .game-form button {
         margin-top: 20px;
         padding: 10px;
-        font-size: 1.2em;
+        font-size: 1.5em;
         background-color: #333;
         color: white;
         border: none;
@@ -166,7 +167,7 @@ function goToStep2() {
 
     h2 {
         font-family: 'Edo SZ', cursive;
-        font-size: 1.6em;
+        font-size: 2em;
         color: white;
         text-align: center;
         text-shadow: 1px 1px 2px black;

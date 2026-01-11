@@ -16,8 +16,8 @@
             $prenom_clean = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $prenom)); // nettoie pour les noms de fichiers
 
 
-            echo "<figure onclick=\"location.href='/vs/page/perso/{$prenom_url}.php'\">";
-            echo "<img src='/vs/img/perso/{$prenom_clean}.png' alt='Image de {$prenom}'>";
+            echo "<figure onclick=\"location.href='/vs3/page/perso/{$prenom_url}.php'\">";
+            echo "<img src='/vs3/img/perso/{$prenom_clean}.png' alt='Image de {$prenom}'>";
             echo "<figcaption>{$prenom}</figcaption>";
             echo "</figure>";
         }
@@ -31,10 +31,10 @@
 
 
 <a href="javascript:history.back()" class="btn-retour">
-    <img src="/vs/img/return.png" alt="Bouton retour" />
+    <img src="/vs3/img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
+<a href="/vs3/index.php?action=all" class="btn-accueil">
   <img src="../img/home.png" alt="Accueil" />
 </a>
 
@@ -47,13 +47,13 @@
        <style>
         @font-face {
             font-family: 'Edo SZ';
-            src: url('/vs/fonts//edosz.ttf') format('truetype');
+            src: url('/vs3/fonts//edosz.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
 
         body {
-            background-image: url('/vs/img/background.png');
+            background-image: url('/vs3/img/background.png');
             background-size: cover;
             background-position: center;
             margin: 0;

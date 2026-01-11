@@ -15,10 +15,15 @@
 
     body {
         background-image: url('img/background.png');
-        background-size: cover;
-        background-position: center;
+        background-size: cover;      /* L'image couvre tout l'espace disponible */
+        background-position: center; /* L'image est centrée */
+        background-repeat: no-repeat;/* Empêche la répétition */
+        background-attachment: fixed;/* L'image ne bouge pas quand on scrolle */
+        
+        min-height: 100vh;           /* Prend au moins 100% de la hauteur de l'écran */
         margin: 0;
         padding: 0;
+        
         font-family: 'Edo SZ', cursive;
         display: flex;
         flex-direction: column;
@@ -39,6 +44,16 @@
         flex-wrap: wrap;
         margin-top: 200px; /* avant c'était 70px */
         margin-bottom: 200px;
+    }
+
+    /* On cible uniquement la première image */
+    .menu-options figure:first-of-type img {
+        width: 300px; /* Taille plus grande pour la première */
+    }
+
+    /* La deuxième image reste à la taille définie ici */
+    .menu-options figure:last-of-type img {
+        width: 250px; 
     }
 
     figure {
@@ -140,10 +155,10 @@
     <img src="img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
+<a href="/vs3/page/menu.php" class="btn-accueil">
   <img src="img/home.png" alt="Accueil" />
 </a>
 
-<a href="/vs/index.php?action=mode" class="btn-mode">
+<a href="/vs3/index.php?action=mode" class="btn-mode">
     <img src="img/back_to_all.png" alt="Accueil" />
 </a>

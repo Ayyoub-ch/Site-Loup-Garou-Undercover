@@ -1,5 +1,5 @@
 <title>Compte des scores </title>
-<form class="game-form" id="gameForm" method="POST" action="/vs/page/traitement.php">
+<form class="game-form" id="gameForm" method="POST" action="/vs3/page/traitement.php">
     <!-- Étape 1 : Choix du jeu -->
     <div id="step1">
         <h2>Quel jeu avez-vous joué aujourd'hui ?</h2>
@@ -55,7 +55,7 @@ function goToStep2() {
     <img src="../img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
+<a href="/vs3/page/menu.php" class="btn-accueil">
   <img src="../img/home.png" alt="Accueil" />
 </a>
 
@@ -63,7 +63,7 @@ function goToStep2() {
 <style>
 @font-face {
     font-family: 'Edo SZ';
-    src: url('/vs/fonts/edosz.ttf') format('truetype');
+    src: url('/vs3/fonts/edosz.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

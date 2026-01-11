@@ -3,13 +3,13 @@
 
 <div class="container">
     <figure>
-        <a href="/vs/index.php?action=loup_garou">
+        <a href="/vs3/index.php?action=loup_garou">
         <img src="../img/loup_garou.png"  alt="loup"  style="width: 350px; height: auto;"/></a> 
         <figcaption>Loup-Garou</figcaption>
     </figure>
 
 <figure>
-    <a href="/vs/index.php?action=undercover">
+    <a href="/vs3/index.php?action=undercover">
     <img src="../img/undercover.png" alt="undercover"  style="width: 350px; height: auto;"/></a> 
     <figcaption>Undercover</figcaption>
 </figure>
@@ -20,7 +20,7 @@
     <img src="../img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
+<a href="/vs3/page/menu.php" class="btn-accueil">
   <img src="../img/home.png" alt="Accueil" />
 </a>
 
@@ -111,7 +111,7 @@ img {
 
 figcaption {
     margin-top: 12px;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #555;
     font-weight: 500;
 }

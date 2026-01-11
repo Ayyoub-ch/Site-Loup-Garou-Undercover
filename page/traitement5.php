@@ -44,6 +44,6 @@ foreach ($prenoms as $prenom) {
 }
 
 // Redirection finale
-header("Location: /vs/page/fiche_perso.php");
+header("Location: /vs3/page/fiche_perso.php");
 exit;
 ?>

@@ -4,7 +4,7 @@
 <!-- ======= SECTION SUPPRESSION ======= -->
 <h2>Supprimer un ou plusieurs personnages</h2>
 
-<form method="POST" action="/vs/page/traitement5.php" class="fiche-form">
+<form method="POST" action="/vs3/page/traitement5.php" class="fiche-form">
   <div class="form-colonne">
     <p>Coche les personnages à supprimer :</p>
 
@@ -27,10 +27,10 @@
 
 
 <a href="javascript:history.back()" class="btn-retour">
-    <img src="/vs/img/return.png" alt="Bouton retour" />
+    <img src="/vs3/img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
+<a href="/vs3/page/menu.php" class="btn-accueil">
   <img src="../img/home.png" alt="Accueil" />
 </a>
 
@@ -38,23 +38,23 @@
 
 
 <a href="javascript:history.back()" class="btn-retour">
-    <img src="/vs/img/return.png" alt="Bouton retour" />
+    <img src="/vs3/img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/index.php?action=menu" class="btn-accueil">
-  <img src="/vs/img/home.png" alt="Accueil" />
+<a href="/vs3/index.php?action=all" class="btn-accueil">
+  <img src="/vs3/img/home.png" alt="Accueil" />
 </a>
 
 <style>
 @font-face {
     font-family: 'Edo SZ';
-    src: url('/vs/fonts/edosz.ttf') format('truetype');
+    src: url('/vs3/fonts/edosz.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    background-image: url('/vs/img/background.png');
+    background-image: url('/vs3/img/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

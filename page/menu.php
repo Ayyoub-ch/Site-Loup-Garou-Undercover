@@ -8,7 +8,7 @@
         }
 
         body {
-            background-image: url('/vs/img/background.png');
+            background-image: url('/vs3/img/background.png');
             background-size: cover;
             background-position: center;
             margin: 0;
@@ -142,28 +142,28 @@
 
 <div class="menu-options">
     <figure onclick="location.href='formulaire.php'">
-        <img src="/vs/img/results.png" alt="Menu 1">
+        <img src="/vs3/img/results.png" alt="Menu 1">
         <figcaption>Ajouter un score</figcaption>
     </figure>
     <figure onclick="location.href='game.php'">
-        <img src="/vs/img/score.png" alt="Menu 2">
+        <img src="/vs3/img/score.png" alt="Menu 2">
         <figcaption>Voir les scores</figcaption>
     </figure>
     <figure onclick="location.href='stats.php'">
-        <img src="/vs/img/stats.png" alt="Menu 3">
+        <img src="/vs3/img/stats.png" alt="Menu 3">
         <figcaption>Voir les stats</figcaption>
     </figure>
 </div>
 
 
 <a href="javascript:history.back()" class="btn-retour">
-    <img src="/vs/img/return.png" alt="Bouton retour" />
+    <img src="/vs3/img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
-  <img src="/vs/img/home.png" alt="Accueil" />
+<a href="/vs3/page/menu.php" class="btn-accueil">
+  <img src="/vs3/img/home.png" alt="Accueil" />
 </a>
 
-<a href="/vs/index.php?action=mode" class="btn-mode">
-    <img src="/vs/img/back_to_all.png" alt="Accueil" />
+<a href="/vs3/index.php?action=mode" class="btn-mode">
+    <img src="/vs3/img/back_to_all.png" alt="Accueil" />
 </a>

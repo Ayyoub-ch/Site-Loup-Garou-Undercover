@@ -23,7 +23,7 @@ $joueurs = $pdo->query($sql_loup)->fetchAll(PDO::FETCH_ASSOC);
     <div class="center-images">
         <div class="player">
             <div class="image-container">
-                <img src="img/case_blue.png" alt="Case Blue">
+                <img src="img/case_blue.png" alt="Case Blue" class="case">
                 <img src="img/perso/yamin2.png" alt="Yamine" class="inner-player">
             </div>
             <div class="score-name">
@@ -36,7 +36,7 @@ $joueurs = $pdo->query($sql_loup)->fetchAll(PDO::FETCH_ASSOC);
 
         <div class="player">
             <div class="image-container">
-                <img src="img/case_red.png" alt="Case Red">
+                <img src="img/case_red.png" alt="Case Red" class="case">
                 <img src="img/perso/halima2.png" alt="Halima" class="inner-player">
             </div>
             <div class="score-name">
@@ -55,8 +55,8 @@ $joueurs = $pdo->query($sql_loup)->fetchAll(PDO::FETCH_ASSOC);
     <img src="img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
-    <img src="img/home.png" alt="Accueil" />
+<a href="/vs3/page/menu.php" class="btn-accueil">
+  <img src="img/home.png" alt="Accueil" />
 </a>
 
 
@@ -162,10 +162,17 @@ h2 {
     height: auto;
 }
 
+
 .watch-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.case {
+  position: relative;
+  width: 300px; /* adapte selon ton image */
+  max-width: 80vw;
 }
 
 .image-container {

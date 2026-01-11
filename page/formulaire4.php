@@ -3,7 +3,7 @@
 <h1>Mais votre personnage a été ajouté</h1>
 <h2>Créer une fiche personnage</h2>
 
-<form method="POST" action="/vs/page/traitement_fiche.php" enctype="multipart/form-data" class="fiche-form">
+<form method="POST" action="/vs3/page/traitement_fiche.php" enctype="multipart/form-data" class="fiche-form">
   <div class="form-colonne">
     <!-- Colonne gauche : infos & texte -->
     <label for="nom">Nom du personnage :</label>
@@ -33,23 +33,23 @@
 </form>
 
 <a href="javascript:history.back()" class="btn-retour">
-    <img src="/vs/img/return.png" alt="Bouton retour" />
+    <img src="/vs3/img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
+<a href="/vs3/page/menu.php" class="btn-accueil">
   <img src="../img/home.png" alt="Accueil" />
 </a>
 
 <style>
 @font-face {
     font-family: 'Edo SZ';
-    src: url('/vs/fonts/edosz.ttf') format('truetype');
+    src: url('/vs3/fonts/edosz.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    background-image: url('/vs/img/background.png');
+    background-image: url('/vs3/img/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

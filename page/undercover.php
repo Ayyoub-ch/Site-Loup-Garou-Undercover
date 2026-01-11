@@ -53,8 +53,8 @@ $joueurs = $pdo->query($sql_undercover)->fetchAll(PDO::FETCH_ASSOC);
     <img src="img/return.png" alt="Bouton retour" />
 </a>
 
-<a href="/vs/page/menu.php" class="btn-accueil">
-  <img src="/vs/img/home.png" alt="Accueil" />
+<a href="/vs3/page/menu.php" class="btn-accueil">
+  <img src="/vs3/img/home.png" alt="Accueil" />
 </a>
 
 

@@ -97,7 +97,7 @@ $joueurs = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 </form>
 
 
-<a href="/vs/page/menu.php" class="btn-accueil">
+<a href="/vs3/index.php?action=all" class="btn-accueil">
   <img src="../img/home.png" alt="Accueil" />
 </a>
 
@@ -114,7 +114,7 @@ $joueurs = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     body {
       margin: 0;
       padding: 0;
-      background: #f6c445 url('../img/background.png') 150%/*center*//cover no-repeat;
+      background: url('../img/background.png') 150%/*center*//cover no-repeat;
       font-family: 'Anton', sans-serif;
       display: flex;
       flex-direction: column;
@@ -208,15 +208,24 @@ html, body {
   display: block;
 }
 
+/*Ancien style
+
+.scoreboard-container {
+  width: 100%;            
+  max-width: 4000px;
+  padding-bottom: 10px; /
+  margin-top: 100px;
+  margin-right: 400px;
+}
+
 .scoreboard-wrapper {
-  width: 100%;
-  overflow-x: auto;
-  padding-bottom: 20px;
+    width: 100%;
+    overflow: visible;     
 }
 
 .scoreboard {
-  width: max-content; /* Force à prendre la largeur de son contenu */
-  min-width: 100%;    /* Ne jamais être plus petit que l'écran */
+  width: max-content; 
+  min-width: 100%;    
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 15px;
@@ -224,6 +233,35 @@ html, body {
   display: grid;
   grid-template-columns: 1fr repeat(var(--nb-joueurs), 150px);
   gap: 10px;
+}
+*/
+
+.scoreboard-container {
+    width: 90%;            /* Laisse une petite marge sur les côtés */
+    max-width: 1500px;     /* Largeur maximale pour ne pas trop étirer sur PC */
+    margin: 50px auto;     /* AUTO ici est la clé pour centrer horizontalement */
+    padding-bottom: 20px;
+}
+
+.scoreboard-wrapper {
+    width: 100%;
+    display: flex;         /* Aide au centrage */
+    justify-content: center;
+    overflow: visible; 
+}
+
+.scoreboard {
+    width: 100%;           /* S'adapte au container */
+    background: rgba(255, 255, 255, 0.1); /* Ton effet transparent */
+    padding: 30px;
+    border-radius: 20px;   /* Coins arrondis comme sur l'image */
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Optionnel : ajoute un léger contour */
+    
+    display: grid;
+    /* On utilise 'auto' pour les labels et '1fr' pour que les colonnes joueurs soient égales */
+    grid-template-columns: auto repeat(var(--nb-joueurs), 1fr);
+    gap: 15px;
 }
 
 
@@ -298,11 +336,9 @@ html, body {
   }
 }
 
-.scoreboard-container {
-  width: 100%;
-  overflow-x: auto;
-  padding-bottom: 10px; /* Pour pas coller aux boutons */
-}
+
+
+
 
 
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     
-    <link rel="stylesheet" href="/vs/style.css">
+    <link rel="stylesheet" href="/vs3/style.css">
 </head>
 <body>
 
